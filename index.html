@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fahad Ahmed Ornob | Portfolio</title>
+    <meta name="description" content="Fahad Ahmed Ornob — graphic design, AI coding, Android rooting, and car culture." />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -30,9 +31,9 @@
               Specializing in Graphic Design, AI Coding, Android Rooting, and a true
               passion for cars and performance culture.
             </p>
-            <div class="quote-box">
-              <p>"Hard work beats talent when talent doesn't work hard."</p>
-              <span>— Tim Notke</span>
+            <div class="quote-box" id="quote-box">
+              <p id="quote-text">"Hard work beats talent when talent doesn't work hard."</p>
+              <span id="quote-author">— Tim Notke</span>
             </div>
             <div class="cta-group">
               <a href="#about" class="btn primary">Explore Me</a>
@@ -75,7 +76,7 @@
               <p>Exploring device customization and deeper system performance possibilities.</p>
             </div>
             <div class="skill-card">
-              <h3>Car Lover</h3>
+              <h3>Car Enthusiast</h3>
               <p>Passionate about car culture, performance, and automotive enthusiasm.</p>
             </div>
           </div>
@@ -85,12 +86,7 @@
       <section id="quotes" class="section quote-section">
         <div class="container">
           <h2>Hardcore Life Quotes</h2>
-          <ul class="quotes-list">
-            <li>"Discipline is the bridge between goals and success."</li>
-            <li>"No pain, no gain."</li>
-            <li>"Stay hungry, stay humble."</li>
-            <li>"Success is built on effort, patience, and consistency."</li>
-          </ul>
+          <ul class="quotes-list" id="quotes-list"></ul>
         </div>
       </section>
 
@@ -103,12 +99,38 @@
               I’m open to creative projects, collaborations, ideas, and opportunities
               where design, coding, and passion meet.
             </p>
+            <p class="contact-note">Choose the platform that works best for you.</p>
           </div>
 
           <div class="contact-details">
-            <a href="mailto:fahadahmedornob@gmail.com">fahadahmedornob@gmail.com</a>
-            <a href="tel:+8801700000000">+880 1700-000000</a>
-            <span>Dhaka, Bangladesh</span>
+            <div class="social-links" aria-label="Social media links">
+              <a class="social-link whatsapp" href="https://wa.me/fahad2a" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                  <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .4 5.2.4 11.7c0 2.1.6 4.1 1.6 5.9L.3 24l6.6-1.7a11.7 11.7 0 0 0 5.2 1.2h.1c6.4 0 11.7-5.2 11.7-11.7 0-3.1-1.2-6.1-3.4-8.3Zm-8.3 18a9.7 9.7 0 0 1-4.9-1.3l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.4 4.7Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-2-.9-3.3-1.7-4.5-3.8-.4-.6.4-.6 1.1-2 .1-.2 0-.4 0-.6l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.1 3.1 1.3 3.3c.2.2 2.2 3.4 5.4 4.7 2 .8 2.8.9 3.8.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z" />
+                </svg>
+                <span>WhatsApp</span>
+              </a>
+              <a class="social-link instagram" href="https://www.instagram.com/ornob599" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" class="icon-fill" />
+                </svg>
+                <span>Instagram</span>
+              </a>
+              <a class="social-link threads" href="https://www.threads.net/@ornob599" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+                <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                  <path d="M17.6 11.1c-.3-4.1-2.7-6.4-6.7-6.4-3.2 0-5.3 1.6-5.8 4.3l2.1.5c.4-1.7 1.6-2.5 3.7-2.5 2.5 0 3.9 1.1 4.4 3.5-1.1-.3-2.3-.5-3.5-.5-3.7 0-5.8 1.7-5.8 4.6 0 2.9 2.3 4.8 5.7 4.8 3.3 0 5.7-1.8 6.3-4.7 1 .8 1.5 1.8 1.5 3 0 2.7-2.4 4.2-6 4.2-5.1 0-8.7-3.1-8.7-8.2 0-5 3.4-8.6 8.5-8.6 5.2 0 8.8 3.2 9.1 8.5l-2.1-.5ZM11.7 17.2c-2.1 0-3.5-.9-3.5-2.3 0-1.5 1.2-2.3 3.5-2.3 1.2 0 2.4.2 3.4.5-.2 2.6-1.3 4.1-3.4 4.1Z" />
+                </svg>
+                <span>Threads</span>
+              </a>
+              <a class="social-link facebook" href="https://www.facebook.com/f1fahad" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                  <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V10H8v3h2.5v8h3Z" />
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -119,5 +141,95 @@
         <p>© 2026 Fahad Ahmed Ornob | Built with passion and purpose.</p>
       </div>
     </footer>
+
+    <script>
+      const STORAGE_KEY = "fao-last-quote";
+      const HOURLY_MS = 60 * 60 * 1000;
+      const fallbackQuotes = [
+        { text: "Hard work beats talent when talent doesn't work hard.", author: "Tim Notke" },
+        { text: "Discipline is the bridge between goals and success.", author: "Unknown" },
+        { text: "No pain, no gain.", author: "Unknown" },
+        { text: "Stay hungry, stay humble.", author: "Unknown" },
+        { text: "Success is built on effort, patience, and consistency.", author: "Unknown" },
+        { text: "Great things never come from comfort zones.", author: "Unknown" },
+        { text: "Your future depends on what you do today.", author: "Unknown" }
+      ];
+
+      function setQuote(quote) {
+        document.getElementById("quote-text").textContent = `"${quote.text}"`;
+        document.getElementById("quote-author").textContent = `— ${quote.author}`;
+      }
+
+      function getRandomQuote(items) {
+        return items[Math.floor(Math.random() * items.length)];
+      }
+
+      function saveQuote(quote) {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({ quote, timestamp: Date.now() }));
+        } catch (error) {
+          console.warn("Could not save quote locally.", error);
+        }
+      }
+
+      function loadSavedQuote() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return null;
+
+          const saved = JSON.parse(raw);
+          if (!saved || !saved.quote || !saved.timestamp) return null;
+
+          if (Date.now() - saved.timestamp < HOURLY_MS) {
+            return saved.quote;
+          }
+        } catch (error) {
+          console.warn("Could not read saved quote.", error);
+        }
+
+        return null;
+      }
+
+      async function fetchQuotes() {
+        try {
+          const response = await fetch("quotes.json");
+          if (!response.ok) throw new Error("quotes.json not available");
+
+          const data = await response.json();
+          return Array.isArray(data) ? data : [...(data.motivational || []), ...(data.inspirational || [])];
+        } catch (error) {
+          console.warn("Using fallback quotes.", error);
+          return fallbackQuotes;
+        }
+      }
+
+      function renderQuoteList(quotes) {
+        const list = document.getElementById("quotes-list");
+        if (!list) return;
+
+        const topQuotes = [...quotes].sort(() => Math.random() - 0.5).slice(0, 8);
+        list.innerHTML = topQuotes
+          .map((quote) => `<li>"${quote.text}"</li>`)
+          .join("");
+      }
+
+      async function loadQuote(forceNew = false) {
+        const saved = !forceNew ? loadSavedQuote() : null;
+
+        if (saved) {
+          setQuote(saved);
+        } else {
+          const quotes = await fetchQuotes();
+          const quote = getRandomQuote(quotes);
+          setQuote(quote);
+          saveQuote(quote);
+        }
+
+        const quotes = await fetchQuotes();
+        renderQuoteList(quotes);
+      }
+
+      loadQuote();
+    </script>
   </body>
 </html>
